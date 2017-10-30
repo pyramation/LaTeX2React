@@ -10,11 +10,17 @@ const DEFAULT_SCRIPT: string =
   'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML'
 
 const DEFAULT_OPTIONS = {
-  tex2jax: {
-    inlineMath: []
-  },
+  showProcessingMessages: false,
+  messageStyle: 'none',
   showMathMenu: false,
-  showMathMenuMSIE: false
+  showMathMenuMSIE: false,
+  tex2jax: {
+    processEnvironments: true,
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    preview: 'none',
+    processEscapes: true
+  }
 }
 
 export interface State {

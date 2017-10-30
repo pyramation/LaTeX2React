@@ -1,6 +1,6 @@
 {
   "name": "latex2react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "keywords": [],
   "main": "dist/latex2react.umd.js",
